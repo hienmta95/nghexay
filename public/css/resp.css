@@ -1,0 +1,67 @@
+@media screen and (max-width: 590px) {
+
+    .section .section-title{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .section.featured-companies {
+
+    }
+
+
+        .featured-companies .ft-company {
+            height: 65px;
+            max-height: 130px;
+            margin-bottom: 5px;
+
+        }
+
+        .featured-companies .ft-company img {
+
+        }
+
+
+        .article-detail {
+
+        }
+    .article-detail img{
+        max-width: 100%;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .wide-intro .dtable .dtable-cell .search-row .search-col .form-control, .wide-intro .dtable .dtable-cell .search-row .search-col .select2{
+        margin-bottom: 5px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-overly-mask {
+        z-index: 1950
+    }
+
+    .page-sidebar.mobile-filter-sidebar {
+        z-index: 1955
+    }
+
+    .select2-dropdown {
+        z-index: 1960
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-brand.logo.logo-title {
+        max-width: 100px;
+        padding-top: 9px !important;
+    }
+    .navbar-brand.logo.logo-title img{
+        width: 180px;
+        height: auto;
+    }
+}

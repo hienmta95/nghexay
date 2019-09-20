@@ -1,0 +1,5 @@
+@include('account.inc.step-1')
+@include('account.inc.step-2')
+@include('account.inc.step-3')
+@include('account.inc.step-4')
+@include('account.inc.step-5')

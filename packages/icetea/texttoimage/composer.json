@@ -1,0 +1,13 @@
+{
+  "name": "jobsearch/laravel-text-to-image",
+  "description": "Convert formatted texts into pretty pictures.",
+  "license": "MIT",
+  "authors": [
+	{
+	  "name": "Icetea",
+	  "email": "contact@icetea.com"
+	}
+  ],
+  "minimum-stability": "stable",
+  "require": {}
+}

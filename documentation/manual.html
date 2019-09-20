@@ -1,0 +1,1765 @@
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <title>GoldenCareers - Tài liệu</title>
+
+    <!-- Styles -->
+    <link href="assets/css/docs.min.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/skin-blue.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500%7CLato:300,400" rel="stylesheet"
+          type="text/css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    
+
+</head>
+
+<body data-spy="scroll" data-target=".sidebar" data-offset="200" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+
+
+<!-- Sidebar -->
+<aside class="sidebar sidebar-boxed sidebar-dark">
+
+
+    <ul class="nav sidenav dropable">
+        <li class="">
+            <a href="#installation" class="has-child"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt</font></font></a>
+            <ul>
+                <li class=""><a href="#installation-apache"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Apache</font></font></a></li>
+                <li class=""><a href="#installation-nginx"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Nginx</font></font></a></li>
+                <li class=""><a href="#installation-localhost"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Localhost</font></font></a></li>
+            </ul>
+        </li>
+        <li class=""><a href="#upgrade"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nâng
+            cấp</font></font></a></li>
+        <li class="">
+            <a href="#smtp" class="has-child"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">SMTP</font></font></a>
+            <ul>
+                <li class=""><a href="#own-smtp-server"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Máy chủ SMTP riêng</font></font></a></li>
+                <li class=""><a href="#mandrill"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mandrill</font></font></a></li>
+                <li><a href="#amazon-ses"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Amazon
+                    SES</font></font></a></li>
+                <li class=""><a href="#mailgun"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Súng ngắn</font></font></a></li>
+                <li class=""><a href="#sparkpost"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Pháo hoa</font></font></a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="#payment-providers" class="has-child"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Thiết lập thanh toán</font></font></a>
+            <ul>
+                <li>
+                    <a href="#paypal"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PayPal</font></font></a>
+                </li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="#sms-apis"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">API
+                SMS</font></font></a>
+        </li>
+        <li class="">
+            <a href="#social-login" class="has-child"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Đăng nhập MXH</font></font></a>
+            <ul>
+                <li class=""><a href="#facebook"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Facebook</font></font></a></li>
+                <li><a href="#google"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Google</font></font></a>
+                </li>
+            </ul>
+        </li>
+        <li class=""><a href="#google-maps"><font style="vertical-align: inherit;"><font
+                style="vertical-align: inherit;">Google Maps</font></font></a></li>
+        <li class=""><a href="#captcha"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Captcha</font></font></a>
+        </li>
+        <li class="">
+            <a href="#image-processing" class="has-child"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Thư viện hình ảnh</font></font></a>
+            <ul>
+                <li class=""><a href="#imagick"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Imagick</font></font></a></li>
+                <li class=""><a href="#clear-cache"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Xóa bộ nhớ cache</font></font></a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a href="#geo-location"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Vị trí
+                địa lý</font></font></a>
+        </li>
+        <li class="">
+            <a href="#svg-maps"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bản đồ
+                SVG</font></font></a>
+        </li>
+        <li class="">
+            <a href="#countries-data"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dữ
+                liệu quốc gia</font></font></a>
+        </li>
+        <li class="">
+            <a href="#languages"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ngôn
+                ngữ</font></font></a>
+        </li>
+        <li class="">
+            <a href="#how-to"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết lập khác</font></font></a>
+        </li>
+        <li class="active">
+            <a href="#cron-job"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cron Job</font></font></a>
+        </li>
+    </ul>
+
+</aside>
+<!-- END Sidebar -->
+
+
+<header class="site-header navbar-transparent">
+
+    <!-- Top navbar & branding -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+
+            <!-- Toggle buttons and brand -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="true" aria-controls="navbar">
+                    <span class="glyphicon glyphicon-option-vertical"></span>
+                </button>
+
+                <button type="button" class="navbar-toggle for-sidebar" data-toggle="offcanvas">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- END Toggle buttons and brand -->
+
+
+            <!-- END Top navbar -->
+
+        </div>
+    </nav>
+    <!-- END Top navbar & branding -->
+
+    <!-- Banner -->
+    <div class="banner auto-size" style="background-color: #58a3d3">
+        <div class="container-fluid text-white">
+            <h1><strong><font style="vertical-align: inherit;"></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tài liệu kỹ thuật </font><strong><font
+                    style="vertical-align: inherit;">GoldenCareers</font></strong></font></h1>
+        </div>
+    </div>
+    <!-- END Banner -->
+
+</header>
+
+<main class="container-fluid">
+
+    <!-- Main content -->
+    <article class="main-content" role="main">
+        <section>
+            <h2 id="installation"><a href="#installation"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt</font></font></a></h2>
+
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trước khi cài đặt, vui
+                lòng đảm bảo rằng bạn đã kích hoạt các thành phần dưới máy chủ của mình</font></font></strong>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>PHP 7.1.3 or greater
+OpenSSL PHP Extension
+PDO PHP Extension
+Mbstring PHP Extension
+Tokenizer PHP Extension
+XML PHP Extension
+Ctype PHP Extension
+JSON PHP Extension
+GD PHP Extension (or Imagick PHP Extension)
+PHP Fileinfo extension
+PHP Zip Archive
+Rewrite Module (Apache or Nginx)</code></pre>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Yêu cầu PHP.INI</font></font></strong>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>open_basedir must be disabled</code></pre>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quyền truy cập tệp và
+                thư mục</font></font></strong>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>/bootstrap        775
+/storage          775 (recursively)</code></pre>
+
+
+
+            <h3 id="installation-nginx"><a href="#installation-nginx"><strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt với
+                Nginx</font></font></strong></a></h3>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt tất cả các tệp gói
+                    GoldenCareers vào&nbsp; </font></font><code>/var/www/</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">và đặt cấu hình máy chủ như sau:</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>root "/var/www/public";
+location / {
+   try_files $uri $uri/ /index.php?$query_string;
+}</code></pre>
+
+
+
+        </section>
+
+
+        <section>
+            <h2 id="smtp"><a href="#smtp"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SMTP</font></font></a>
+            </h2>
+
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SMTP là
+                gì?</font></font></strong><br>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SMTP Là một giao thức để gửi tin nhắn e-mail giữa các máy chủ. </font><font
+                    style="vertical-align: inherit;">Hầu hết các hệ thống e-mail gửi thư qua Internet đều sử dụng SMTP
+                để gửi thư từ máy chủ này sang máy chủ khác. Bạn có thể sử dụng bất kỳ nhà cung cấp dịch vụ SMTP nào.
+        </font></font>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Máy chủ SMTP cá nhân</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mandrill</font></font>
+                </li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Amazon SES</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sendgrid</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mailchimp</font></font>
+                </li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gmail, Yahoo hoặc một
+                    số nhà cung cấp email khác</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xin lưu ý rằng một số
+                nhà cung cấp hosting chặn cổng 25 hoặc 465 trong trường hợp đó bạn đã thay đổi máy chủ email
+                SMTP hoặc liên hệ với nhà cung cấp hosting của mình</font></font></strong>
+
+
+            <h3 id="own-smtp-server"><a href="#own-smtp-server"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Máy chủ SMTP riêng</font></font></a></h3>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sử dụng </font></font></strong>
+            <font style="vertical-align: inherit;"><strong><font style="vertical-align: inherit;">thiết lập bảng điều
+                khiển quản trị viên </font></strong><strong><font style="vertical-align: inherit;">của riêng bạn hoặc
+                một số máy chủ SMTP</font></strong></font><strong><font
+                style="vertical-align: inherit;"></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Thư</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Trình điều khiển thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    'Máy </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">chủ thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cổng thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mã hóa thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Tên người dùng thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mật khẩu thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc sử
+                dụng </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">thiết lập tập tin</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">tập tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sao chép và dán chi
+                    tiết smtp máy chủ trong tệp.</font></font></li>
+            </ul>
+            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Nó sẽ trông giống như thế này.
+            </font></font>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>MAIL_DRIVER=smtp
+MAIL_HOST=your-mail-host
+MAIL_PORT=your-mail-port
+MAIL_USERNAME=your-mail-username
+MAIL_PASSWORD=your-mail-password
+MAIL_ENCRYPTION=your-mail-encryption</code></pre>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thay
+                    thế </font></font><code>your-mail-host</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">, </font></font><code>your-mail-port</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-mail-username</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-mail-password</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">và </font></font><code>your-mail-encryption</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu và tải tệp
+                    lên</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+            </ul>
+            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                LƯU Ý: </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                style="vertical-align: inherit;">Cài đặt tệp ghi đè lên bảng quản trị.
+
+        </font></font><br><br>
+            <div class="alert alert-info" role="alert">
+                <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu
+                    ý:</font></font></strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+                Đừng quên thay đổi địa chỉ email của người gửi trong </font></font><strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">bảng điều khiển quản
+                trị</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Thư</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">giao dịch Email Sender</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> để phù hợp nó với một địa
+                chỉ email cho phép của máy chủ SMTP của bạn.
+            </font></font></div>
+
+            <h3 id="mandrill"><a href="#mandrill"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Mandrill</font></font></a></h3>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cá nhân chúng tôi sử
+                dụng mandrill và vâng nó miễn phí</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Truy cập bảng điều
+                    khiển ủy nhiệm.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tạo khóa API, thông
+                    qua trang này </font></font><a href="https://mandrillapp.com/settings/" target="_blank"><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://mandrillapp.com/sinstall/</font></font></a>
+                </li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sao
+                    chép </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">chìa khóa</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết lập bảng quản
+                trị</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Thư</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Trình điều khiển thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Bí mật bắt buộc</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    'Máy </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">chủ thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cổng thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mã hóa thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Tên người dùng thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mật khẩu thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc sử dụng thiết lập
+                tập tin /.env</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">tập tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xóa tất cả các biến
+                    cấu hình Mail hiện tại của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm các dòng dưới
+                    đây:</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>MAIL_DRIVER=mandrill
+MANDRILL_SECRET=your-mandrill-secret
+MAIL_HOST=your-mandrill-smtp-host
+MAIL_PORT=your-mandrill-smtp-port
+MAIL_USERNAME=your-mandrill-smtp-username
+MAIL_PASSWORD=your-mandrill-smtp-password
+MAIL_ENCRYPTION=your-mandrill-smtp-encryption</code></pre>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thay
+                    thế </font></font><code>your-mandrill-secret</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">, </font></font><code>your-mandrill-smtp-host</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-mandrill-smtp-port</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-mandrill-smtp-username</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-mandrill-smtp-password</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">và </font></font><code>your-mandrill-smtp-encryption</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu và tải lên tập
+                    tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+            </ul>
+            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                LƯU Ý: </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                style="vertical-align: inherit;">Cài đặt tệp ghi đè lên bảng quản trị.
+
+        </font></font><br><br>
+            <div class="alert alert-info" role="alert">
+                <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu
+                    ý:</font></font></strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+                Đừng quên thay đổi địa chỉ email của người gửi trong </font></font><strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">bảng điều khiển quản
+                trị</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Thư</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">giao dịch Email Sender</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> để phù hợp nó với một địa
+                chỉ email cho phép của máy chủ SMTP của bạn.
+            </font></font></div>
+
+
+            <h3 id="amazon-ses"><a href="#amazon-ses"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Amazon SES</font></font></a></h3>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết lập bảng quản
+                trị</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Thư</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Trình điều khiển thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Khóa SES</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Bí mật SES</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Vùng SES</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc sử
+                dụng </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">thiết lập tập tin</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">tập tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xóa tất cả các biến
+                    cấu hình Mail hiện tại của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm các dòng dưới
+                    đây:</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>MAIL_DRIVER=ses
+SES_KEY=your-ses-key
+SES_SECRET=your-ses-secret
+SES_REGION=your-ses-region</code></pre>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thay
+                    thế </font></font><code>your-ses-key</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">, </font></font><code>your-ses-secret</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">và </font></font><code>your-ses-region</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu và tải lên tập
+                    tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+            </ul>
+            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                LƯU Ý: </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                style="vertical-align: inherit;">Cài đặt tệp ghi đè lên bảng quản trị.
+
+        </font></font><br><br>
+            <div class="alert alert-info" role="alert">
+                <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu
+                    ý:</font></font></strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+                Đừng quên thay đổi địa chỉ email của người gửi trong </font></font><strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">bảng điều khiển quản
+                trị</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Thư</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">giao dịch Email Sender</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> để phù hợp nó với một địa
+                chỉ email cho phép của máy chủ SMTP của bạn.
+            </font></font></div>
+
+
+            <h3 id="mailgun"><a href="#mailgun"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Súng ngắn</font></font></a></h3>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết lập bảng quản
+                trị</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Thư</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Trình điều khiển thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    ', </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">domain Tên miền Mailgun</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    ',' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Bí mật Mailgun</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ','
+                    Máy </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">chủ thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    ',' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cổng thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    ',' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mã hóa thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    ',' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Tên người dùng thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    'và' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mật khẩu thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc sử
+                dụng </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">thiết lập tập tin</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">tập tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xóa tất cả các biến
+                    cấu hình Mail hiện tại của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm các dòng dưới
+                    đây:</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>MAIL_DRIVER=mailgun
+MAILGUN_DOMAIN=your-mailgun-domain
+MAILGUN_SECRET=your-mailgun-secret
+MAIL_HOST=your-mailgun-smtp-host
+MAIL_PORT=your-mailgun-smtp-port
+MAIL_USERNAME=your-mailgun-smtp-username
+MAIL_PASSWORD=your-mailgun-smtp-password
+MAIL_ENCRYPTION=your-mailgun-smtp-encryption</code></pre>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thay
+                    thế </font></font><code>your-mailgun-domain</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">, </font></font><code>your-mailgun-secret</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-mailgun-smtp-host</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-mailgun-smtp-port</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-mailgun-smtp-username</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-mailgun-smtp-password</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">và </font></font><code>your-mailgun-smtp-encryption</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu và tải lên tập
+                    tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+            </ul>
+            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                LƯU Ý: </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                style="vertical-align: inherit;">Cài đặt tệp ghi đè lên bảng quản trị.
+
+        </font></font><br><br>
+            <div class="alert alert-info" role="alert">
+                <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu
+                    ý:</font></font></strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+                Đừng quên thay đổi địa chỉ email của người gửi trong </font></font><strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">bảng điều khiển quản
+                trị</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Thư</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">giao dịch Email Sender</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> để phù hợp nó với một địa
+                chỉ email cho phép của máy chủ SMTP của bạn.
+            </font></font></div>
+
+
+            <h3 id="sparkpost"><a href="#sparkpost"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Pháo hoa</font></font></a></h3>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết lập bảng quản
+                trị</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Thư</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Trình điều khiển thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Bí mật Sparkpost</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    'Máy </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">chủ thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cổng thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mã hóa thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Tên người dùng thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mật khẩu thư</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc sử
+                dụng </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">thiết lập tập tin</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">tập tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xóa tất cả các biến
+                    cấu hình Mail hiện tại của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm các dòng dưới
+                    đây:</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>MAIL_DRIVER=sparkpost
+SPARKPOST_SECRET=your-sparkpost-secret
+MAIL_HOST=your-sparkpost-smtp-host
+MAIL_PORT=your-sparkpost-smtp-port
+MAIL_USERNAME=your-sparkpost-smtp-username
+MAIL_PASSWORD=your-sparkpost-smtp-password
+MAIL_ENCRYPTION=your-sparkpost-smtp-encryption</code></pre>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thay
+                    thế </font></font><code>your-sparkpost-secret</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">, </font></font><code>your-sparkpost-smtp-host</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-sparkpost-smtp-port</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-sparkpost-smtp-username</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>your-sparkpost-smtp-password</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">và </font></font><code>your-sparkpost-smtp-encryption</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu và tải lên tập
+                    tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+            </ul>
+            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                LƯU Ý: </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                style="vertical-align: inherit;">Cài đặt tệp ghi đè lên bảng quản trị.
+
+        </font></font><br><br>
+            <div class="alert alert-info" role="alert">
+                <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu
+                    ý:</font></font></strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+                Đừng quên thay đổi địa chỉ email của người gửi trong </font></font><strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">bảng điều khiển quản
+                trị</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Thư</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">giao dịch Email Sender</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> để phù hợp nó với một địa
+                chỉ email cho phép của máy chủ SMTP của bạn.
+            </font></font></div>
+
+        </section>
+
+
+        <section>
+
+            <h2 id="payment-providers"><a href="#payment-providers"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Nhà cung cấp thanh toán</font></font></a></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kịch bản hỗ trợ các nhà
+                cung cấp thanh toán này:</font></font></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paypal</font></font>
+                </li>
+            </ul>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Paypal là một trong những
+                cổng thanh toán tốt nhất trên thế giới, nó hỗ trợ tất cả các thẻ tín dụng và được chấp nhận ở nhiều quốc
+                gia.</font></font></p>
+
+
+            <h3 id="paypal"><a href="#paypal"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Paypal</font></font></a></h3>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Truy cập tài liệu chính
+                thức: </font></font><a href="https://developer.paypal.com/developer/applications/create" target="_blank"
+                                       rel="noopener noreferrer"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">https://developer.paypal.com/developer/appluggest/create</font></font></a>
+            </p>
+            <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết
+                lập</font></font></strong></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sao chép và dán tên
+                    người dùng, mật khẩu và chữ ký API vào tệp /.env.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">tệp bằng cách cung cấp các khóa như thế
+                    này:</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;"> PAYPAL_MODE = sandbox </font></font><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+PAYPAL_USERNAME=yourPayPalBusinessEamil@something.com </font></font><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+PAYPAL_PASSWORD = yourpassword </font></font><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+PAYPAL_SIGNATURE = YourSignatrue</font></font>
+</pre>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn phải sử
+                    dụng </font></font><code>PAYPAL_MODE=live</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">trong máy chủ trực tiếp của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+            </ul>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bây giờ hãy truy
+                cập </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bảng
+                quản trị</font></font></strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;"> -&gt; </font></font><strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thanh
+                toán</font></font></strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;"> -&gt; </font></font><strong><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Gói</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> để đặt gói và tiền
+                tệ.</font></font></p>
+
+        </section>
+
+        <section>
+            <h2 id="sms-apis"><a href="#sms-apis"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">API SMS</font></font></a></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chức năng này cho phép xác minh số điện thoại di động của người dùng và cung cấp khả năng cho người
+                bán được liên hệ bằng SMS.</font></font></p>
+            <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cách thiết lập?</font></font></h3>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AdminCP -&gt;
+                    Cài đặt -&gt; Cài đặt chung -&gt; Thư -&gt; 'Thiết lập SMS' để đặt API SMS mặc
+                    định.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn có thể sử dụng cả
+                    NEXMO hoặc TWILIO làm API nhà cung cấp SMS của mình:</font></font></li>
+            </ul>
+
+            <h3 id="nexmo"><a href="#nexmo"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">NEXMO</font></font></a></h3>
+            <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NEXMO</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - </font></font><a
+                    href="https://www.nexmo.com" target="_blank" rel="noopener"><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.nexmo.com</font></font></a>
+            </p>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết lập bảng quản
+                trị</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">SMS</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Nexmo Key</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Nexmo Secret</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Nexmo From</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc sử
+                dụng </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">thiết lập tập tin</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">tập tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xóa tất cả các biến
+                    cấu hình Mail hiện tại của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm các dòng dưới
+                    đây:</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;"> NEXMO_KEY = your-nexmo-key </font></font><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+NEXMO_SECRET = your-nexmo-secret </font></font><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+NEXMO_FROM = your-sender-number</font></font>
+</pre>
+
+
+            <p><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">TWILIO</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> - </font></font><a
+                    href="https://www.twilio.com" target="_blank" rel="noopener"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">https://www.twilio.com</font></font></a></p>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết lập bảng quản
+                trị</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">SMS</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Tài khoản Twilio SID</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ',
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mã thông báo Twilio Auth</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Twilio From</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc sử
+                dụng </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">thiết lập tập tin</font></font></strong>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">tập tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xóa tất cả các biến
+                    cấu hình Mail hiện tại của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm các dòng dưới
+                    đây:</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> TWILIO_ACCOUNT_SID = your-twilio-account-sid </font></font><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+TWILIO_AUTH_TOKEN = your-auth-token </font></font><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+TWILIO_FROM = your-sender-number</font></font>
+</pre>
+
+            <h3 id="others-sms-configurations"><a href="#others-sms-configurations"><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cấu hình SMS
+                khác</font></font></a></h3>
+
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">AdminCP -&gt;
+                    Cài đặt -&gt; Cài đặt chung -&gt; SMS -&gt; 'Bật Xác minh điện thoại' để bật / tắt xác minh số điện
+                    thoại di động.</font></font></li>
+                <li>Admin panel -&gt; Setup -&gt; General Settings -&gt; SMS -&gt; 'Enable SMS Message' to
+                    enabling/disabling the SMS sending between users.
+                </li>
+            </ul>
+            <p>You are done.</p>
+        </section>
+
+        <section>
+            <h2 id="social-login"><a href="#social-login"></a><a href="#social-login"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập xã hội</font></font></a></h2>
+            <div class="alert alert-warning" role="alert">
+                <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quan trọng:</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Đảm bảo BASE_URL trong tệp .env khớp với url trang web của bạn. </font><font style="vertical-align: inherit;">Nó nên được đặt tự động, nhưng bạn có thể cần phải làm thủ công trong một số trường hợp hiếm.
+            </font></font></div>
+
+            <h3 id="facebook"><a href="#facebook"></a><a href="#facebook"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Facebook</font></font></a></h3>
+            <ol>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng ký tài khoản facebook thông thường, nếu bạn chưa có.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở&nbsp; </font></font><a href="https://developers.facebook.com/" target="_blank" rel="noopener noreferrer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">url này</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">nhấp vào 'ứng dụng của tôi'</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> trong thanh điều hướng trên cùng, sau đó </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm ứng dụng mới.</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhập bất kỳ tên hiển thị, địa chỉ email của bạn và nhấp vào&nbsp; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tạo ID ứng dụng</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhấp vào </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm sản phẩm</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> trong thanh bên trái, sau đó </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập Facebook</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , chọn
+                </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Web</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , nhập url trang web của bạn. </font><font style="vertical-align: inherit;">Bạn có thể bỏ qua phần còn lại của bảng trong trình hướng dẫn khởi động nhanh.
+                </font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhấp vào </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập Facebook -&gt; Cài đặt</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> và nhập </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://mysite.com/auth/facebook/callback</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    vào </font><font style="vertical-align: inherit;">trường </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">URIs chuyển hướng OAuth hợp lệ</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .
+                </font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhấp vào </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bảng điều khiển</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> trong thanh bên trái và sao chép / dán </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">APP ID</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> và </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">APP </font></font></strong>
+                    <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SECRET</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> vào tệp .env.
+                    </font></font></li>
+            </ol>
+            <p style="text-align: center;"><img src="/uploads/2017/02/facebook-app-test.png"></p>
+            <p>&nbsp;</p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bây giờ, bạn phải thiết lập bảng quản trị của mình:</font></font></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi tới </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">bảng điều khiển quản trị</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -&gt; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -&gt; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -&gt; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập xã hội</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đối với Facebook: đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID khách hàng Facebook</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bí mật khách hàng Facebook</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc đặt tất cả các giá trị
+                cấu hình và khóa api trong </font></font><code>.env</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tệp.</font></font></p>
+            <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ví dụ Facebook
+                trong tệp .env</font></font></strong></p>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sao chép</font></font></a><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sao Liên</font></font></font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> FACEBOOK_CLIENT_ID = your-facebook-client_id </font></font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+FACEBOOK_CLIENT_SECRET = your-facebook-client_secret</font></font></font></font>
+</pre>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LƯU Ý: Cài đặt tệp /.env
+                ghi đè lên bảng quản trị.</font></font></p>
+
+
+            <h3 id="google"><a href="#google"></a><a href="#google"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Google</font></font></font></font></a></h3>
+            <ol>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng ký tài khoản
+                    google thông thường, nếu bạn chưa có.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở </font></font><a href="https://console.developers.google.com/" target="_blank" rel="noopener noreferrer"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">url
+                    này</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    , tạo một dự án mới, nhấp vào </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thông tin xác thực</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ở thanh bên trái,
+                    chọn </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID khách hàng Oauth</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ứng dụng web.</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhập </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">http://mysite.com/auth/google/callback</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> vào </font><font style="vertical-align: inherit;">trường </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">URI chuyển hướng được ủy
+                    quyền</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> và nhấp vào </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tạo.</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sao chép / dán </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID </font></font></strong><font style="vertical-align: inherit;"></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">khách hàng</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> và </font><strong><font style="vertical-align: inherit;">Bí mật khách hàng</font></strong><font style="vertical-align: inherit;"> vào tệp .env.</font></font></li>
+            </ol>
+            <p style="text-align: center;"><img src="/uploads/2017/02/facebook-oauth-client.png">
+            </p>
+            <p>&nbsp;</p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bây giờ, bạn phải thiết lập
+                bảng quản trị của mình:</font></font></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập xã hội</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đối với Google: đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ID khách hàng của Google</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bí mật khách hàng của Google</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc đặt tất cả các giá trị
+                cấu hình và khóa api trong </font></font><code>.env</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">tệp.</font></font></p>
+            <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ví dụ Google trong
+                tệp .env</font></font></strong></p>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sao chép</font></font></a><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy" data-original-title="Copied!"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sao Liên</font></font></font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> GOOGLE_CLIENT_ID = your-google-client_id </font></font></font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+GOOGLE_CLIENT_SECRET = your-google-client_secret</font></font></font></font>
+</pre>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LƯU Ý: Cài đặt tệp /.env
+                ghi đè lên bảng quản trị.</font></font></p>
+
+        </section>
+
+        <section>
+            <h2 id="google-maps"><a href="#google-maps"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">bản đồ Google</font></font></a></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn phải kích hoạt </font></font><a
+                    href="https://developers.google.com/maps/documentation/embed/guide" target="_blank"
+                    rel="noopener noreferrer"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Google Maps Nhúng API</font></font></a><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> và </font></font><a
+                    href="https://developers.google.com/maps/documentation/javascript/get-api-key#get-an-api-key"
+                    target="_blank" rel="noopener noreferrer"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">API của Google Maps JavaScript</font></font></a><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> trong Google Console của
+                bạn.</font></font></p>
+            <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết lập bảng quản
+                trị</font></font></strong></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới&nbsp; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    &nbsp;-&gt;&nbsp; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Những người khác</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">khóa Google Maps</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc sử dụng thiết
+                lập tập tin /.env</font></font></strong></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa&nbsp; </font></font><code>.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">&nbsp;tập tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm mã
+                    này:</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> GOOGLE_MAPS_API_KEY = your-googlemaps-key
+</font></font></pre>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thay thế&nbsp; </font></font><code>your-googlemaps-key</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu và tải lên tập
+                    tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="captcha"><a href="#captcha"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Captcha</font></font></a></h2>
+            <h4 id="recaptcha-key"><a href="#recaptcha-key"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Khóa Recaptcha</font></font></a></h4>
+            <h5 id="what-is-recaptcha"><a href="#what-is-recaptcha"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Recaptcha là gì</font></font></a></h5>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">reCAPTCHA là một dịch vụ
+                CAPTCHA miễn phí giúp bảo vệ trang web khỏi spam, đăng ký độc hại và các hình thức tấn công khác
+                trong đó máy tính cố gắng ngụy trang thành người. </font><font style="vertical-align: inherit;">reCAPTCHA
+                có dạng widget mà bạn có thể dễ dàng thêm vào blog, diễn đàn, đăng ký của mình. Bạn sẽ cần đăng ký tài khoản một tài khoản reCAPTCHA theo đường dẫn <a href="https://www.google.com/recaptcha/admin">https://www.google.com/recaptcha/admin</a></font></font></p>
+
+            <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thiết lập bảng quản
+                trị</font></font></strong></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tới GoldenCareers
+                    bạn </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">An ninh</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BẬT hoặc TẮT ' </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kích hoạt
+                    reCAPTCHA</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">reCAPTCHA Public Key</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">reCAPTCHA Private Key</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi.</font></font></li>
+            </ul>
+            <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hoặc sử
+                dụng </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">thiết lập tập tin</font></font></strong></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn</font></font></li>
+                <li><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Mở </font></font><code>/.env</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">tệp.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhập các key được yêu cầu.</font></font></li>
+            </ul>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>RECAPTCHA_PUBLIC_KEY=your-recaptcha-public_key
+RECAPTCHA_PRIVATE_KEY=your-recaptcha-private_key</code></pre>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thay
+                    thế </font></font><code>your-recaptcha-public_key</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">và </font></font><code>your-recaptcha-private_key</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu các tập
+                    tin.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+            </ul>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LƯU Ý: </font></font><code>/.env</code><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt tệp ghi đè lên bảng
+                quản trị.</font></font></p>
+
+        </section>
+
+        <section>
+            <h2 id="image-processing"><a href="#image-processing"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Đang xử lý hình ảnh</font></font></a></h2>
+            <h4 id="image-setting"><a href="#image-setting"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Cài đặt hình ảnh</font></font></a></h4>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Các kịch bản hỗ trợ cho hai
+                bộ xử lý hình ảnh.</font></font></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GD</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tưởng
+                    tượng</font></font></li>
+            </ul>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GD là trình điều khiển thay
+                đổi kích thước hình ảnh rất cơ bản cho PHP và chỉ được sử dụng trên trang web cơ bản. </font><font
+                    style="vertical-align: inherit;">Nó có vấn đề về bộ nhớ và không hoạt động tốt ở mọi điều
+                kiện. </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+
+                Nếu bạn muốn trang web cho pro-nhiếp ảnh hoặc hình ảnh chất lượng tốt hơn chúng tôi mong bạn sử
+                dụng </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">imagick</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> thay thế cho kết quả chất
+                lượng tốt hơn. </font></font><br><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">
+
+                Hãy chắc chắn rằng máy chủ đã </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">imagick</font></font></strong><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> cài đặt.</font></font></p>
+
+            <h3 id="imagick"><a href="#imagick"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Imagick</font></font></a></h3>
+            <p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trước tiên hãy đảm
+                bảo rằng bạn đã cài đặt hình ảnh trên máy chủ của mình, nếu không thì hãy liên hệ với nhà cung cấp dịch
+                vụ lưu trữ của bạn.</font></font></strong></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào tài
+                    khoản FTP của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mở và chỉnh
+                    sửa </font></font><code>/.env</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">tập tin.</font></font></li>
+            </ul>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tìm kiếm</font></font></strong>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>IMAGE_DRIVER=gd</code></pre>
+            <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thay đổi nó
+                thành</font></font></strong>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><code>IMAGE_DRIVER=imagick</code></pre>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+                <li><a href="#clear-cache"><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Xóa bộ nhớ cache (tùy chọn)</font></font></a></li>
+            </ul>
+
+
+            <h3 id="clear-cache"><a href="#clear-cache"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Xóa bộ nhớ cache</font></font></a></h3>
+            <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xóa tất cả bộ nhớ cache
+                hình ảnh</font></font></h5>
+            <p></p><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chú ý ..
+            !! </font><font style="vertical-align: inherit;">Trang web có thể quay mặt xuống thời gian cho đến
+            khi tất cả các hình ảnh được lưu lại</font></font></strong>
+            <h5><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đối với những người không
+                sử dụng CDN trên đám mây</font></font></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đăng nhập vào FTP của
+                    bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyến
+                    thăm </font></font><code>storage/framework/cache</code></li>
+                <li>Delete all file from it.</li>
+                <li>Visit your site in browser and refresh it.</li>
+            </ul>
+            <h5>For those who using cloud CDN (Coming soon)</h5>
+            <ul>
+                <li>Login to cloud server</li>
+                <li>Visit <code>cache</code> folder</li>
+                <li>Delete all file from it.</li>
+                <li>Now login to your website FTP account</li>
+                <li>Visit <code>storage/framework/cache</code></li>
+                <li>Delete all file from it.</li>
+                <li>Visit your site in browser and refresh it for 10-15 times.</li>
+            </ul>
+
+        </section>
+
+        <section>
+            <h2 id="geo-location"><a href="#geo-location">Geo location</a></h2>
+            <h5>How can I enable Geo location?</h5>
+            <ul>
+                <li>Visit the <strong>Admin panel</strong> -&gt; <strong>Setup</strong> -&gt; <strong>General
+                    Settings</strong> -&gt; <strong>Geo Location</strong> and turn '<strong>Enable Geolocation</strong>'
+                    to ON by checking the checkbox.
+                </li>
+                <li>If you want to redirect users to their country's website based on their IP address, you should leave
+                    blank the parameter "<strong>Default Country</strong>" in your <strong>Admin panel</strong> -&gt;
+                    <strong>Setup</strong> -&gt; <strong>General Settings</strong> -&gt; <strong>Geo Location</strong>.
+                    ATTENTION: When you&nbsp;reset this option by setting a default country, you need erase all your
+                    browser's data (like: historic, hosted app's data and cache, etc.) to see the effect of the change.
+                </li>
+                <li>(Optional) Go to:&nbsp;<a href="https://dev.maxmind.com/geoip/geoip2/geolite2/" target="_blank"
+                                              rel="noopener noreferrer">https://dev.maxmind.com/geoip/geoip2/geolite2/</a>
+                </li>
+                <li>(Optional) Download the latest binary version of the 'GeoLite2 City' database (or use <a
+                        href="http://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz" target="_blank"
+                        rel="noopener noreferrer">this link</a>)
+                </li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Tùy chọn) Trích xuất
+                    nó trong thư mục cơ sở dữ liệu Maxmind </font></font><code>/storage/database/maxmind/</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">như thế
+                    này&nbsp; </font></font><code>/storage/database/maxmind/GeoLite2-City.mmdb</code>
+                    <br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn có thể thay
+                        thế tệp hiện tại (nếu có) để cập nhật cơ sở dữ liệu Maxmind.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="svg-maps"><a href="#svg-maps"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Bản đồ SVG</font></font></a></h2>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kịch bản sử dụng bản đồ SVG
+                Simplemaps ( </font></font><a href="http://simplemaps.com/resources/svg-maps" target="_blank"
+                                              rel="noopener"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">http://simplemaps.com/resource/svg-maps</font></font></a><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ). </font><font
+                    style="vertical-align: inherit;">Và bản đồ của một số quốc gia (Kosovo, một số đảo, v.v.) không có
+                sẵn.</font></font></p>
+
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đối với một số quốc gia,
+                bạn cần chỉnh sửa các tệp SVG để thay đổi một số tên bang hoặc tỉnh, v.v. Bạn có thể tìm thấy tất cả các
+                tệp bản đồ SVG trong </font></font><code>/public/images/maps/</code><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;">thư mục.</font></font></p>
+
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Có giấy phép (sử dụng
+                thương mại) miễn phí và giấy phép trả phí. </font><font style="vertical-align: inherit;">Vì vậy, bạn có
+                thể mua giấy phép cho một số bản đồ SVG bị thiếu và thuê một nhà phát triển địa phương để thêm chúng cho
+                trang web (dựa trên mã hiện tại). </font><font style="vertical-align: inherit;">Bạn cũng có thể
+                vô hiệu hóa bản đồ SVG từ AdminCP của mình.</font></font></p>
+        </section>
+
+        <section>
+            <h2 id="countries-data"><a href="#countries-data"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Dữ liệu quốc gia</font></font></a></h2>
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cơ sở dữ liệu
+                Geonames</font></font></strong></h5>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Điều quan trọng cần biết là
+                tập lệnh sử dụng cơ sở dữ liệu Geonames ( </font></font><a href="http://www.geonames.org"
+                                                                           target="_blank" rel="noopener"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">http://www.geonames.org</font></font></a><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ) (cơ sở dữ liệu có cấu
+                trúc nhất của họ) cho dữ liệu về các thành phố và các bộ phận hành chính.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhưng, thật đáng buồn, cơ
+                sở dữ liệu này không hoàn chỉnh cho bất kỳ quốc gia nào. </font><font style="vertical-align: inherit;">Và
+                bạn cần cập nhật cơ sở dữ liệu này (từ AdminCP -&gt; Cài đặt -&gt; Cài đặt chung -&gt;
+                Quốc tế -&gt; Quốc gia -&gt; "Quản trị viên phân chia x" hoặc "Thành phố") bằng cách thêm dữ liệu mới
+                (tôn trọng định dạng dữ liệu Geonames) hoặc bằng cách sửa đổi dữ liệu hiện có hoặc bằng cách xóa
+                chúng.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Từ v2.0 +, bạn phải cập
+                nhật cơ sở dữ liệu vị trí quốc gia từ AdminCP viên -&gt; Cài đặt -&gt; Cài đặt chung -&gt; Quốc tế
+                -&gt; Quốc gia (xem ảnh chụp màn hình bên dưới)</font></font></p>
+            <p><a href="/uploads/2017/02/country-locations-database.png"><img
+                    class="text-center center-block"
+                    src="/uploads/2017/02/country-locations-database-1024x304.png" alt=""
+                    width="700" height="208"></a></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kịch bản không hỗ trợ một
+                số quốc gia nhất định (Kosovo, một số đảo, v.v.) vì dữ liệu ở các quốc gia này không đáng tin
+                cậy. </font><font style="vertical-align: inherit;">Và bạn sẽ cần thêm dữ liệu bị thiếu (hoặc không chính
+                xác) theo cách thủ công từ bảng quản trị của mình.</font></font></p>
+
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cơ sở dữ liệu của
+                riêng bạn</font></font></strong></h5>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn cũng có thể xóa tất cả
+                dữ liệu khỏi Geoname và thêm dữ liệu của riêng bạn.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Để làm điều này, bạn cần
+                phải:</font></font></p>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Xóa các bảng
+                    "subadmin1", "subadmin2" và "thành phố" trong cơ sở dữ liệu (sử dụng
+                    phpMyAdmin)</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Thêm dữ liệu mới từ
+                    AdminCP cho quốc gia (hoặc cho các quốc gia đang hoạt động)</font></font></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="languages"><a href="#languages"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Ngôn ngữ</font></font></a></h2>
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm cách nào để
+                thêm ngôn ngữ mới?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyển
+                    đến </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">AdminCP</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font><font
+                        style="vertical-align: inherit;">&nbsp;-&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài
+                    đặt</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> -&gt;&nbsp; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ngôn
+                    ngữ</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nhấp vào
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Thêm ngôn ngữ</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyển đến thư mục
+                    dịch tại </font></font><code>/resources/lang</code></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kịch bản đã được sao
+                    chép thư mục </font></font><code>/resources/lang/en/</code><font
+                        style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">thành&nbsp;</font></font><code>/resources/lang/</code>
+                </li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LƯU Ý: Đừng quên dịch
+                    các mục có thể dịch cơ sở dữ liệu từ AdminCP viên (Người dùng -&gt; Tiêu đề, Quảng cáo -&gt;
+                    Loại quảng cáo, Quảng cáo -&gt; Danh mục, Thiết lập -&gt; Gói, Cài đặt -&gt; Loại báo cáo,
+                    v.v.).</font></font></li>
+            </ul>
+
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm cách nào để
+                thay đổi ngôn ngữ mặc định?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyển
+                    đến </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">AdminCP</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font><font
+                        style="vertical-align: inherit;">&nbsp;-&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài
+                    đặt</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> -&gt;&nbsp; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ngôn
+                    ngữ</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tạo một mục ngôn ngữ
+                    mới và kiểm tra trường "Mặc định". </font><font style="vertical-align: inherit;">Hoặc nhấp vào Chỉnh
+                    sửa để chỉnh sửa ngôn ngữ hiện có và chọn "Mặc định".</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu tất cả các thay
+                    đổi</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn xong việc
+                    rồi.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Để ngăn các bản dịch
+                    bị thiếu trong ngôn ngữ mặc định mới, vui lòng mở
+                    tệp </font></font><code>/config/app.php</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">và thay đổi </font></font><code>fallback_locale</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">giá trị
+                    bằng </font></font><code></code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ngôn
+                    ngữ mặc định của bạn&nbsp; </font><font style="vertical-align: inherit;">(ví dụ </font></font><code>fr</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">). </font><font
+                        style="vertical-align: inherit;">Lưu các tập tin trên máy chủ của bạn.</font></font>
+                </li>
+            </ul>
+
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm cách nào để
+                chỉnh sửa bản dịch?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyển đến thư mục
+                    dịch tại </font></font><code>/resources/lang/</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">(mỗi ngôn ngữ có mã ngôn ngữ là tên thư mục).</font></font>
+                </li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyển đến thư mục của
+                    ngôn ngữ bạn muốn dịch và các tệp của họ (ví dụ: </font></font><code>global.php</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">chứa 90% văn bản của
+                    trang web, mail.php cho nội dung email, v.v.).</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Để dịch một tệp, bạn
+                    phải thay đổi các giá trị chứ không phải các khóa của mảng PHP.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lưu các tập tin của
+                    bạn trên máy chủ của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn đã làm
+                    xong.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LƯU Ý: Điều quan trọng
+                    là phải biết tập lệnh không hỗ trợ hướng RTL.</font></font></li>
+            </ul>
+
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm thế nào tôi có
+                thể vô hiệu hóa ngôn ngữ?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyển
+                    đến </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">AdminCP</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font><font
+                        style="vertical-align: inherit;">&nbsp;-&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài
+                    đặt</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> -&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ngôn
+                    ngữ</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chọn một ngôn ngữ và
+                    chỉnh sửa nó.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bỏ chọn hộp kiểm 'Hoạt
+                    động' và lưu.</font></font></li>
+            </ul>
+
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm thế nào tôi có
+                thể xóa ngôn ngữ?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyển
+                    đến </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">AdminCP</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font><font
+                        style="vertical-align: inherit;">&nbsp;-&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài
+                    đặt</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> -&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ngôn
+                    ngữ</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chọn một ngôn ngữ và
+                    xóa nó.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">QUAN TRỌNG: Bằng cách
+                    xóa ngôn ngữ, thư mục tệp ngôn ngữ </font></font><code>/resources/lang/</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp;cũng sẽ bị
+                    xóa.</font></font></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 id="how-to"><a href="#how-to"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Làm thế nào để</font></font></a></h2>
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm cách nào tôi
+                có thể đặt Quốc gia mặc định?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới&nbsp; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    &nbsp;-&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    &nbsp;-&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    &nbsp;-&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Geo Location</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> và thiết lập ' </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mặc định
+                    Nước</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> ' với mã quốc gia (chỉ mã ISO alpha-2 được chấp
+                    nhận). </font><font style="vertical-align: inherit;">Từ v2.x trở lên tập lệnh đặt quốc gia mặc định
+                    trong khi cài đặt.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn đã làm
+                    xong.</font></font></li>
+            </ul>
+
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm cách nào tôi
+                có thể đặt Tiền tệ mặc định?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tiền tệ mặc định sẽ là
+                    tiền tệ của quốc gia hiện tại, ngoại trừ loại tiền tệ của Gói mà bạn có thể đặt
+                    từ&nbsp; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">AdminCP</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Gói</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .</font></font></li>
+            </ul>
+
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm cách nào tôi
+                có thể thiết lập các gói / Gói?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyển
+                    đến </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">AdminCP</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font><font
+                        style="vertical-align: inherit;">-&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài
+                    đặt</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> -&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Gói</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chọn một gói và chỉnh
+                    sửa nó</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LƯU Ý: Bạn có thể thêm
+                    các gói mới hoặc xóa các gói hiện tại trong phiên bản thực tế.</font></font></li>
+            </ul>
+
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm cách nào tôi
+                có thể thiết lập mã quảng cáo (ví dụ Adsense)?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chuyển
+                    đến </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">AdminCP</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> </font><font
+                        style="vertical-align: inherit;">&nbsp;-&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài
+                    đặt</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> -&gt; </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Quảng cáo</font></font></strong>
+                </li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Chỉnh sửa mã ' </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">trên cùng</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">dưới cùng</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mã sẽ được hiển thị
+                    trên các trang kết quả tìm kiếm và trang quảng cáo.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn đã làm
+                    xong.</font></font></li>
+            </ul>
+
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm cách nào tôi
+                có thể thiết lập Recaptcha?</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đi
+                    tới </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Admin Dashboard</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">Cài đặt chung</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                    -&gt; </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">An ninh</font></font></strong></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BẬT hoặc TẮT ' </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">Kích hoạt
+                    reCAPTCHA</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đặt
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">khóa công khai reCAPTCHA</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ' và
+                    ' </font></font><strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">khóa riêng reCAPTCHA</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> '</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và lưu các thay đổi
+                    của bạn.</font></font></li>
+            </ul>
+            <font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                Vui lòng xem thêm các tính năng bằng cách truy cập </font></font><strong><font
+                style="vertical-align: inherit;"><font style="vertical-align: inherit;">bảng Quản
+            trị</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> của
+            bạn </font><font style="vertical-align: inherit;">-&gt; </font></font><strong><font
+                style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài
+            đặt</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> -&gt; </font></font><strong><font
+                style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cài đặt
+            chung</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+            ...
+        </font></font></section>
+
+        <section>
+            <h2 id="cron-job"><a href="#cron-job"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Công việc lương thấp</font></font></a></h2>
+            <h4><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Làm cách nào tôi
+                có thể thiết lập Cron Job?</font></font></strong></h4>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Để đặt lệnh Ads Cleaner,
+                bạn cần thêm mã bên dưới vào công cụ Cron Job của máy chủ:</font></font></p>
+            <pre><span class="language-name"></span><a class="btn btn-sm btn-purple clipboard-copy"
+                                                       data-original-title="Copied!"><font
+                    style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">Sao chép</font></font></a><font
+                    style="vertical-align: inherit;"><font style="vertical-align: inherit;"> {PHP_BIN_PATH} -q / path / to / YourWebsite / artisan ads: sạch</font></font></pre>
+            <p style="text-decoration: underline;"><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">CHÚ THÍCH</font></font></p>
+            <ul>
+                <li><code>{PHP_BIN_PATH}</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;">=&gt; Ex: </font></font><code>/usr/bin/php7.1.3</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">, </font></font><code>/usr/bin/php</code><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">,</font></font><code>/usr/lib/php</code>
+                </li>
+                <li><code>/path/to/YourWebsite/</code><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> =&gt; Bạn phải thay thế đường dẫn này bằng đường dẫn thực sự
+                    của bạn.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn có thể đặt Công
+                    việc Cron để chạy mỗi giờ hoặc mỗi ngày. </font><font style="vertical-align: inherit;">Bạn cũng có
+                    thể chạy nó vào một giờ cụ thể mỗi ngày.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Đừng ngần ngại hỏi
+                    thêm thông tin về nó từ nhà cung cấp hosting của bạn.</font></font></li>
+            </ul>
+
+            <hr>
+
+
+
+            <h4><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Lệnh Cron Job hoạt
+                động như thế nào?</font></font></strong></h4>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sau khi thiết lập để chạy
+                mỗi giờ (ví dụ), bạn có thể xem xét 2 trường hợp:</font></font></p>
+            <p>&nbsp;</p>
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. Quảng cáo
+                thường xuyên</font></font></strong></h5>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Bạn phải thiết lập các tùy
+                chọn bên dưới từ </font></font><strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;">AdminCP -&gt; Cài đặt -&gt; Cài đặt chung -&gt;
+                Cron</font></font></strong><font style="vertical-align: inherit;"><font
+                    style="vertical-align: inherit;"> :</font></font></p>
+            <ul>
+                <li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hết hạn quảng
+                    cáo chưa được kích hoạt:</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> Sau thời gian này (tính theo ngày), quảng cáo chưa được kích
+                    hoạt sẽ bị xóa</font></font></li>
+                <li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hết hạn quảng
+                    cáo được kích hoạt:</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> Sau thời gian này (tính theo ngày), quảng cáo được kích hoạt
+                    sẽ được lưu trữ</font></font></li>
+                <li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hết hạn quảng
+                    cáo lưu trữ:</font></font></strong><font style="vertical-align: inherit;"><font
+                        style="vertical-align: inherit;"> Sau thời gian này (tính theo ngày), quảng cáo được lưu trữ sẽ
+                    bị xóa</font></font></li>
+            </ul>
+            <p>&nbsp;</p>
+            <h5><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Quảng cáo cao
+                cấp / được tài trợ / trả tiền</font></font></strong></h5>
+            <ul>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sau thời lượng Gói
+                    (tính theo ngày) mà bạn đã thiết lập từ </font></font><strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;">AdminCP -&gt; Cài
+                    đặt -&gt; Gói -&gt; [EDIT] -&gt; Thời lượng</font></font></strong><font
+                        style="vertical-align: inherit;"><font style="vertical-align: inherit;"> , Quảng cáo cao cấp trở
+                    thành Quảng cáo thông thường.</font></font></li>
+                <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Và sau đó, các quy tắc
+                    Quảng cáo thông thường (được xem trong # 1) được áp dụng để xóa cơ sở dữ liệu trang
+                    web.</font></font></li>
+            </ul>
+        </section>
+
+    </article>
+    <!-- END Main content -->
+</main>
+
+
+
+<!-- Scripts -->
+<script src="assets/js/docs.min.js"></script>
+</body>
+</html>

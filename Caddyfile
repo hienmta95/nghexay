@@ -1,0 +1,15 @@
+goldencareers.loc {
+    tls off
+    root ./public
+    log ./storage/logs/caddy-access.log
+    errors ./storage/logs/caddy-error.log
+
+    fastcgi / 127.0.0.1:9000 php {
+        index index.php
+    }
+
+    rewrite {
+        to {path} {path}/ /index.php?{query}
+    }
+
+}
