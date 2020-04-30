@@ -17,7 +17,7 @@
 	"dependencies": {
 		"axios": "^0.17.1",
 		"bootstrap-sass": "^3.3.7",
-		"jquery": "^1.12.4",
+		"jquery": "^3.5.0",
 		"npm": "^5.10.0",
 		"vue": "^2.5.16"
 	}
